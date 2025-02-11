@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compiling_life rgb/hex generator</title>
+    <link rel="icon" href="path_to_your_icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <img src="personal-Icon copy.png" alt="compiling_life icon" class="header-icon">
+            <h1>compiling_life rgb/hex generator</h1>
+        </div>
+        <div class="website-link-container">
+            <a href="https://compiling-life-personal.onrender.com/" class="website-link">Visit My Personal Website</a>
+        </div>        
+    </header>
+
+    <!-- Color Converter Section -->
+    <div class="converter-container">
+        <div class="converter-box">
+            <h2>Converter</h2>
+            <input type="text" id="hexInput" placeholder="Enter Hex Code (e.g., #FA9907)">
+            <input type="text" id="rgbInput" placeholder="Enter RGB (e.g., 250, 153, 7)">
+            <button onclick="convertColor()">Convert</button>
+        </div>
+
+        <!-- Color Output for Converter -->
+        <div class="color-output">
+            <div class="code-box">
+                <label for="hexCode">Hex:</label>
+                <input type="text" id="hexCode" readonly>
+            </div>
+            <div class="code-box">
+                <label for="rgbCode">RGB:</label>
+                <input type="text" id="rgbCode" readonly>
+            </div>
+        </div>
+    </div>
+
+    <!-- Color Pallets -->
+    <div class="color-pallets">
+        <div id="red-palette" class="color-palette"></div>
+        <div id="orange-palette" class="color-palette"></div>
+        <div id="yellow-palette" class="color-palette"></div>
+        <div id="green-palette" class="color-palette"></div>
+        <div id="blue-palette" class="color-palette"></div>
+        <div id="purple-palette" class="color-palette"></div>
+    </div>
+
+    <!-- Color Output for Pallet -->
+    <div class="color-output">
+        <div class="code-box">
+            <label for="selectedHex">Selected Hex:</label>
+            <input type="text" id="selectedHex" readonly>
+        </div>
+        <div class="code-box">
+            <label for="selectedRgb">Selected RGB:</label>
+            <input type="text" id="selectedRgb" readonly>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
