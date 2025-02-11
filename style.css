@@ -1,11 +1,12 @@
-/* General Styling */
-* {
+* 
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body 
+{
     font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #fa9907, #49738b);
     min-height: 100vh;
@@ -19,57 +20,62 @@ body {
     overflow-x: hidden;
 }
 
-
-/* Header Section */
-header {
+header 
+{
     width: 100%;
-    background-color: #363535; /* Grey header */
+    background-color: #363535;
     padding: 20px 0;
     display: flex;
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.header-container {
+.header-container 
+{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.header-icon {
+.header-icon 
+{
     width: 60px;
     height: 60px;
     margin-right: 15px;
     border-radius: 50%;
 }
 
-h1 {
+h1 
+{
     font-size: 28px;
     font-weight: bold;
 }
 
-/* Converter Section */
-.converter-container {
+.converter-container 
+{
     width: 90%;
     max-width: 1000px;
     margin-top: 50px;
 }
 
-.converter-box {
+.converter-box 
+{
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
-h2 {
+h2 
+{
     margin-bottom: 15px;
     font-size: 24px;
 }
 
-input[type="text"], button {
+input[type="text"], button 
+{
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
@@ -80,7 +86,8 @@ input[type="text"], button {
     color: white;
 }
 
-button {
+button 
+{
     cursor: pointer;
     background-color: #fa9907;
     border: none;
@@ -89,29 +96,33 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+button:hover 
+{
     background-color: #49738b;
 }
 
-/* Color Output Boxes */
-.color-output {
+.color-output 
+{
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
     width: 100%;
 }
 
-.code-box {
+.code-box 
+{
     width: 48%;
 }
 
-.code-box label {
+.code-box label 
+{
     font-size: 16px;
     margin-bottom: 5px;
     display: block;
 }
 
-.code-box input {
+.code-box input 
+{
     width: 100%;
     padding: 10px;
     font-size: 14px;
@@ -121,18 +132,18 @@ button:hover {
     color: white;
 }
 
-/* Color Pallets Section */
-.color-pallets {
+.color-pallets 
+{
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping to the next line */
-    justify-content: center; /* Centers the pallets horizontally */
-    align-items: center; /* Centers the pallets vertically */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
     margin-top: 40px;
     margin-bottom: 40px;
-    width: 100%; /* Make the width 100% to span the whole screen */
-    max-width: 600px; /* Limit the max width */
-    min-width: 200px; /* You can adjust this value for a longer box */
+    width: 100%;
+    max-width: 600px;
+    min-width: 200px;
     height: 300px;
     background-color: rgba(255, 255, 255, 0.1);
     padding: 30px 0;
@@ -142,15 +153,17 @@ button:hover {
     border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-.color-palette {
+.color-palette 
+{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    width: 50%; /* Make each palette take up 50% width (2 per row) */
+    width: 50%;
 }
 
 
-.color-swatch {
+.color-swatch 
+{
     width: 50px;
     height: 50px;
     border-radius: 8px;
@@ -158,64 +171,71 @@ button:hover {
     transition: transform 0.3s, opacity 0.3s ease;
 }
 
-.color-swatch:hover {
+.color-swatch:hover 
+{
     transform: scale(1.2);
     opacity: 0.8;
 }
 
-/* Add responsiveness for smaller screens */
-@media screen and (max-width: 768px) {
-    .color-output {
+@media screen and (max-width: 768px) 
+{
+    .color-output 
+    {
         flex-direction: column;
         align-items: center;
     }
 
-    .code-box {
+    .code-box 
+    {
         width: 100%;
         margin-bottom: 10px;
     }
 
-    .color-pallets {
+    .color-pallets 
+    {
         gap: 10px;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .color-swatch {
+    .color-swatch 
+    {
         width: 40px;
         height: 40px;
     }
 
-    h1 {
+    h1 
+    {
         font-size: 24px;
     }
 
-    .converter-container {
+    .converter-container 
+    {
         width: 100%;
         padding: 0 10px;
     }
 }
 
-/* Link container */
-.website-link-container {
+.website-link-container 
+{
     margin-top: 20px;
 }
 
-/* Link styling */
-.website-link {
+.website-link 
+{
     display: inline-block;
     padding: 12px 30px;
-    background-color: #fa9907; /* Orange background */
+    background-color: #fa9907;
     color: white;
     font-size: 18px;
     font-weight: bold;
-    border-radius: 50px; /* Make it round */
-    text-decoration: none; /* Remove underline */
+    border-radius: 50px;
+    text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover effect */
-.website-link:hover {
+.website-link:hover 
+{
     background-color: #49738b; /* Blue background */
     transform: scale(1.1); /* Slightly grow the button */
 }
